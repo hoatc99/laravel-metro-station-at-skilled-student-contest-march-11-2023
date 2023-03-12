@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Trần Cẩm Hòa - TKW.B31</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <nav
+          class="navbar navbar-expand-lg sticky-top"
+          style="background-color: gainsboro"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/metro-logo.png" alt="" width="100px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggle"
+              aria-controls="navbarToggle"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ticket.html">Đặt vé</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="searchticket.html"
+                    >Tra cứu đặt vé</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="my-3">
+          <div class="container-fluid">
+            <h1 class="text-center text-uppercase fw-bold">Trang chủ</h1>
+          </div>
+        </header>
+
+        <div class="mb-4">
+          <section>
+            <div class="container-fluid">
+              <div class="route-container my-5 text-center">
+                <div class="route-head-container">
+                  <span class="route-name">Tuyến số 1</span>
+                </div>
+                <div class="route-body-container">
+                  <div class="station-container">
+                    <label for="BXMĐ mới" class="station-name">BXMĐ mới</label>
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="BXMĐ mới"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Suối Tiên" class="station-name"
+                      >Suối Tiên</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Suối Tiên"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Khu Công nghệ cao" class="station-name"
+                      >Khu Công nghệ cao</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Khu Công nghệ cao"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Thủ Đức" class="station-name">Thủ Đức</label>
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Thủ Đức"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Bình Thái" class="station-name"
+                      >Bình Thái</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Bình Thái"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Phước Long" class="station-name"
+                      >Phước Long</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Phước Long"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Rạch Chiếc" class="station-name"
+                      >Rạch Chiếc</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Rạch Chiếc"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="An Phú" class="station-name">An Phú</label>
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="An Phú"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Thảo Điền" class="station-name"
+                      >Thảo Điền</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Thảo Điền"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Tân Cảng" class="station-name">Tân Cảng</label>
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Tân Cảng"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span><span class='route-number'>5A</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Văn Thánh" class="station-name"
+                      >Văn Thánh</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Văn Thánh"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Ba Son" class="station-name">Ba Son</label>
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Ba Son"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Nhà hát TP" class="station-name"
+                      >Nhà hát TP</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Nhà hát TP"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span>"
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                  <div class="station-container">
+                    <label for="Bến Thành" class="station-name"
+                      >Bến Thành</label
+                    >
+                    <input
+                      type="radio"
+                      name="station-dot"
+                      id="Bến Thành"
+                      class="station-dot"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="bottom"
+                      data-bs-html="true"
+                      data-bs-title="Tuyến<span class='route-number'>1</span><span class='route-number'>2</span>"
+                      checked
+                    />
+                    <div class="station-line"></div>
+                  </div>
+                </div>
+                <div class="route-foot-container">
+                  <div class="route-info">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>5:00 - 21:00</span>
+                  </div>
+                  <div class="route-info">
+                    <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                    <span>28km</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container-fluid">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide w-75 m-auto"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="8"
+                    aria-label="Slide 9"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="9"
+                    aria-label="Slide 10"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="10"
+                    aria-label="Slide 11"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="11"
+                    aria-label="Slide 12"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="12"
+                    aria-label="Slide 13"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="13"
+                    aria-label="Slide 14"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="assets/images/1.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/2.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/3.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/4.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/5.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/6.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/7.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/8.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/9.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/10.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/11.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/12.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/13.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assets/images/14.jpg"
+                      class="d-block w-100 slider-img"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <footer class="footer bg-light mt-auto border-top">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Đơn vị tài trợ
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <img
+                    src="assets/images/thanhdoan-logo.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Thông tin liên hệ
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <p>Địa chỉ: Số 1 Phạm Ngọc Thạch, Quận 1, TP.HCM</p>
+                  <p>
+                    Email:
+                    <a href="mailto: thanhdoan@tphcm.gov.vn"
+                      >thanhdoan@tphcm.gov.vn</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Danh sách các tuyến
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <p>
+                    <a href="#">Tuyến số 1</a>
+                  </p>
+                  <p>
+                    <a href="#">Tuyến số 2</a>
+                  </p>
+                  <p>
+                    <a href="#">Tuyến số 5A</a>
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="row text-center">
+                <p>Bản quyền &copy; Thành Đoàn TP.HCM</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>

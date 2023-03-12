@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Trần Cẩm Hòa - TKW.B31</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="wrapper">
+        <nav
+          class="navbar navbar-expand-lg sticky-top"
+          style="background-color: gainsboro"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/metro-logo.png" alt="" width="100px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggle"
+              aria-controls="navbarToggle"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="ticket.html"
+                    >Đặt vé</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="searchticket.html"
+                    >Tra cứu đặt vé</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header class="my-3">
+          <div class="container-fluid">
+            <h1 class="text-center text-uppercase fw-bold">Đặt vé</h1>
+          </div>
+        </header>
+
+        <div class="mb-4">
+          <section>
+            <div class="container-fluid">
+              <form
+                class="row g-3 needs-validation border rounded-3 p-2 mt-3 w-75 m-auto bg-info bg-opacity-10"
+                novalidate
+              >
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="select_route" class="form-label fw-bold"
+                      >Tuyến</label
+                    >
+                    <select
+                      name=""
+                      id="select_route"
+                      class="form-select"
+                      required
+                    >
+                      <option value="1">Tuyến 1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mt-3">
+                    <label
+                      for="select_pickup_station"
+                      class="form-label fw-bold"
+                      >Ga lên</label
+                    >
+                    <select
+                      name=""
+                      id="select_pickup_station"
+                      class="form-select"
+                      required
+                    >
+                      <option value="1">Bến Thành</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <label
+                      for="select_dropdown_station"
+                      class="form-label fw-bold"
+                      >Ga xuống</label
+                    >
+                    <select
+                      name=""
+                      id="select_dropdown_station"
+                      class="form-select"
+                      required
+                    >
+                      <option value="2">Thủ Đức</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <label for="input_quantity" class="form-label fw-bold"
+                      >Số lượng đặt</label
+                    >
+                    <input
+                      type="number"
+                      name=""
+                      id="input_quantity"
+                      class="form-control"
+                      value="1"
+                      min="1"
+                      max="20"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Số lượng đặt không hợp lệ
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <label for="input_phone_number" class="form-label fw-bold"
+                      >Điện thoại</label
+                    >
+                    <input
+                      type="text"
+                      name=""
+                      id="input_phone_number"
+                      class="form-control"
+                      pattern="^[0][0-9]{9}$"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Số điện thoại không hợp lệ
+                    </div>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <label for="" class="form-label fw-bold">Thành tiền</label>
+                    <h4 class="fw-bold">45.000 đồng</h4>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <button type="submit" class="btn btn-primary w-25">
+                      Đặt vé
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+
+        <footer class="footer bg-light mt-auto border-top">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Đơn vị tài trợ
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <img
+                    src="assets/images/thanhdoan-logo.png"
+                    width="100%"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Thông tin liên hệ
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <p>Địa chỉ: Số 1 Phạm Ngọc Thạch, Quận 1, TP.HCM</p>
+                  <p>
+                    Email:
+                    <a href="mailto: thanhdoan@tphcm.gov.vn"
+                      >thanhdoan@tphcm.gov.vn</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-title mt-4">
+                  <h4 class="text-uppercase fw-bold text-center">
+                    Danh sách các tuyến
+                  </h4>
+                </div>
+                <div class="footer-content my-4">
+                  <p>
+                    <a href="#">Tuyến số 1</a>
+                  </p>
+                  <p>
+                    <a href="#">Tuyến số 2</a>
+                  </p>
+                  <p>
+                    <a href="#">Tuyến số 5A</a>
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="row text-center">
+                <p>Bản quyền &copy; Thành Đoàn TP.HCM</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
